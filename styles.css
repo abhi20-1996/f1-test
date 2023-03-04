@@ -1,0 +1,292 @@
+*{
+  margin: 0;
+  padding:0;
+}
+span{
+  color:white;
+}
+body{
+  position:relative;
+  background-color: black;
+}
+p{
+  color:white;
+}
+p:hover{
+  text-decoration:underline solid blue;
+}
+h2{
+  color: white;
+}
+
+.menu{
+  visibility: hidden;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left:0;
+  right:0;
+  background-color: black;
+  display: flex;
+  justify-content:space-between;
+  aligh-items:center;
+padding:20px;
+}
+.navlist{
+   display: flex;
+  flex-flow:row wrap;
+  justify-content:space-around;
+   align-items:center;
+  gap: 20px;
+}
+.navlist li{
+  list-style:none;
+}
+.navlist li a{
+  text-decoration:none;
+  color: white;
+  font-size:14px;
+}
+.navlist li a:hover{
+  text-decoration:underline solid blue;
+}
+
+.navright{
+  display:flex;
+  flex-flow:row wrap;
+   justify-content:space-between;
+  aligh-items:center;
+  gap: 10px;
+}
+.bg{
+  
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-blend-mode:darken;
+background-image: url('https://images.everydayhealth.com/images/diet-nutrition/real-cause-of-7-common-food-cravings-4-722x406.jpg?w=768');
+  display: flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-items:left ;
+  align-text:center;
+  gap: 100px;
+}
+.pizza{
+/*   position: absolute;
+left: 30px;
+top: 200px;
+ */
+font-family: 'Quattrocento';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+  
+text-align: right;
+letter-spacing: 0.09em;
+
+color: #FFFFFF;
+   width: 400px;
+height: 20px;
+}
+.inf0{
+padding-left:40px;
+  color: #FFFFFF;
+  width: 300px;
+height: 10px;
+  font-weight: 500;
+font-size: 15px;
+  text-align: left;
+}
+.rec{
+  
+  background-color:rgba(242, 76, 76, 1);
+  box-sizing: border-box;
+  box-shadow: 3px 6px 18px;
+  width: 400px;
+height: 8px;
+  
+}
+
+                             /* ABOUT US */
+
+.aboutus-holder{
+  padding-top:60px;
+}
+.about-holder{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap: 20px;
+}
+
+.about{
+  font-family: 'Quattrocento';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 0px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.about-rec{
+   background: rgba(182, 40, 40, 1);
+
+  box-sizing: border-box;
+  box-shadow: 3px 6px 18px;
+  width: 200px;
+height: 5px;
+    align-self:center;
+}
+.under-about{
+  display:flex;
+  flex-flow:row wrap-reverse;
+  justify-content:center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+gap: 10px;
+}
+.about-img{
+width: 300px;
+height: 200px;
+}
+.about-para{
+  width: 300px;
+  height: 200px;
+}
+               /* Menu */
+.content{
+  padding-top:20px;
+  padding-bottom:30px;
+  padding-left:100px;
+  padding-right:100px;
+}
+  .menu-holder{
+    padding-top:50px;
+  }
+.item-text{
+  width: 100px;
+  height:100px;
+}
+
+.menu-items{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap: 30px;
+  
+}
+.menu-items-left{
+  display:grid;
+  grid-template-columns:repeat(2, auto);
+  grid-template-row:repeat(2, auto);
+  place-items:center;
+/*   row-gap:30px;
+  column-gap:1px; */
+  gap:30px 20px;
+}
+.menu-items-right{
+  display:grid;
+  grid-template-columns:repeat(2, auto);
+  grid-template-row:repeat(2, auto);
+   place-items:center;
+/*   row-gap:30px;
+  column-gap:1px; */
+  gap:30px 20px;
+}
+
+              /*   Find us    */
+.findus-holder{
+  padding:50px;
+}
+.under-findus{
+  padding-top:20px;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:center;
+  gap: 20px;
+}
+
+.findus-text{
+  width: 300px;
+  height: 100px;
+}
+span.text{
+  font-size: 10px;
+}
+img.map{
+  width:300px;
+  height:180px;
+}
+
+
+
+/*  footer */
+.foot{
+  padding:50px;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-between;
+}
+img.chef{
+  width:100px;
+    height:90px;
+}
+
+
+         /* media */
+
+
+@media  (max-width: 700px) {
+ .navlist{
+/*   display:flex;
+   flex-flow:column wrap; */
+/*    display:none; */
+   visibility: hidden;
+}
+  .navright{
+   display:none;
+  }
+  .navbar{
+    height:80px;
+  }
+  .navleft{
+    padding-left:30px;
+    padding-right:30px;
+    font-size: 30px;
+    text-align:center;
+  }
+  .bg{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;
+    width:600px;
+    height:480px;
+  }
+  .foot{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+     align-items:center;
+  }
+  .line{
+  width:33px;
+    height:5px;
+}
+  .burger{
+  visibility: visible;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center ;
+}
+  .menu{
+  visibility: visible;
+    position:fixed;
+    top:10px;
+    right:0;
+}
+}
